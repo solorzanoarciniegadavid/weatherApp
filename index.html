@@ -8,8 +8,32 @@
 </head>
 <body>
     <form>
-        <input type="text" placeholder="Buscar Ciudad">
-        <ul></ul>
+        <input id="search" type="text" placeholder="Buscar Ciudad">
+        <ul id="listado">
+        </ul>
     </form>
+
+    <div id="weather" style="display: none;">
+        <img src="" alt="" id="icon">
+        <h1 id="degrees">20°C</h1>
+        <h2 id="city">Guadalajara</h2>
+        <button id="change">Cambiar Ciudad</button>
+        <div class="info">
+            <div>
+                <h3>Viento</h3>
+                <div id="windVal" class="value">2<span>Km/h</span></div>
+            </div>
+            <div>
+                <h3>Sensacion</h3>
+                <div id="feelsVal" class="value">2<span>Km/h</span></div>
+            </div>
+            <div>
+                <h3>Humedad</h3>
+                <div id="humVal" class="value">2<span>Km/h</span></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="weather.js"></script>
 </body>
 </html>
